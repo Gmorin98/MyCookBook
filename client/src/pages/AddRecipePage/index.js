@@ -182,7 +182,6 @@ const MainContainer = styled.main`
     font-weight: bold;
     background-color: #dc143c;
     color: white;
-    border: none;
     padding: 0.22em;
   }
   & .generalInfo {

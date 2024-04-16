@@ -17,9 +17,9 @@ const MyCookBook = () => {
       <NavLink to="/mycookbook/addrecipe" className={"addRecipe"} >
         +
       </NavLink>
-      {loggedInUserRecipes.map((recipe) => {
+      {loggedInUserRecipes.map((recipe, index) => {
         return (
-          <div className="recipeDiv">
+          <div className="recipeDiv" key={index}>
             <FavoriteButton className="favoriteButton"/>
             <NavLink to={`/mycookbook/${recipe._id}`} style={{textDecoration: "none"}}>
               <section key={recipe._id}>
