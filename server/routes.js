@@ -1,24 +1,20 @@
-// const {
-//   addToCart,
-//   getCart,
-//   getProducts,
-//   updateCart,
-//   removeFromCart,
-//   getRecommendedProducts,
-//   removeCart,
-//   purchaseItem
-// } = require("./handlers");
+const {
+  loginHandler,
+  createAccountHandler,
+  addNewRecipeHandler,
+  addFriendHandler,
+  deleteRecipeHandler,
+  friendsInfoHandler,
+} = require("./handlers");
 
 const router = require("express").Router();
 
-// router.get("/products", getProducts);
-// router.get("/products/recommended", getRecommendedProducts);
-// router.get("/cart", getCart);
+router.post("/login", loginHandler);
+router.post("/signin", createAccountHandler);
+router.post("/addrecipe", addNewRecipeHandler);
+router.post("/addFriend", addFriendHandler);
+router.post("/getFriendsInfo", friendsInfoHandler)
 
-// router.post("/addToCart", addToCart);
-// router.patch("/updateCart", updateCart);
-// router.patch("/deleteItems", purchaseItem)
-// router.delete("/removeFromCart", removeFromCart);
-// router.delete("/deleteCart/:id", removeCart)
+router.delete("/deleteRecipe", deleteRecipeHandler);
 
 module.exports = router;

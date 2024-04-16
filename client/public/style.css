@@ -1,0 +1,12 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/Blue-Background.jpg);
+  background-size: cover;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Concert One", sans-serif;
+}
