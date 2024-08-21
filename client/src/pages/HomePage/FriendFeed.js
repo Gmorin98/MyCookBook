@@ -13,15 +13,15 @@ const FriendFeed = ({friendArray}) => {
             <p>{friend.lastRecipe[0].name}</p>
             <div className="prepTime">
               <svg width="25" height="25" viewBox="-100 -100 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="0" cy="0" r="90" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
-                  <g stroke="#333" stroke-width="4">
+                  <circle cx="0" cy="0" r="90" fill="#f0f0f0" stroke="#333" strokeWidth="2"/>
+                  <g stroke="#333" strokeWidth="4">
                     <line x1="0" y1="-80" x2="0" y2="-70"/>
                     <line x1="80" y1="0" x2="70" y2="0"/>
                     <line x1="0" y1="80" x2="0" y2="70"/>
                     <line x1="-80" y1="0" x2="-70" y2="0"/>
                   </g>
-                  <line x1="0" y1="0" x2="0" y2="-50" stroke="#333" stroke-width="6"/>
-                  <line x1="0" y1="0" x2="30" y2="0" stroke="#333" stroke-width="4"/>
+                  <line x1="0" y1="0" x2="0" y2="-50" stroke="#333" strokeWidth="6"/>
+                  <line x1="0" y1="0" x2="30" y2="0" stroke="#333" strokeWidth="4"/>
                   <circle cx="0" cy="0" r="4" fill="#333"/>
               </svg>
               <p>{friend.lastRecipe[0].prepTime}</p>
